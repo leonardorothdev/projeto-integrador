@@ -39,7 +39,7 @@ export function logoutUser() {
   localStorage.removeItem("userInfo");
 
   // Redireciona para a página de login
-  window.location.href = "/pages/index.html";
+  window.location.href = "../pages/index.html";
 }
 
 export function getAuthData() {
