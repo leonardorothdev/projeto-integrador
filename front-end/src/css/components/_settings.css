@@ -1,0 +1,70 @@
+.settings__container {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 24px;
+}
+
+.settings__card {
+  width: 100%;
+  background-color: var(--bg-main);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-default);
+  color: var(--text-dark);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.settings__right {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.settings__theme-switch {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.settings__theme-btn {
+  background-color: var(--bg-hover);
+  color: var(--text-dark);
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--border-default);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.settings__theme-btn:hover {
+  background-color: var(--border-default);
+}
+
+.settings__theme-btn .lucide-sun {
+  display: none;
+}
+
+.settings__theme-btn .lucide-moon {
+  display: block;
+}
+
+body.dark-mode .settings__theme-btn .lucide-moon {
+  display: none;
+}
+
+body.dark-mode .settings__theme-btn .lucide-sun {
+  display: block;
+}

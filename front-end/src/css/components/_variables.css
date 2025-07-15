@@ -1,0 +1,72 @@
+:root {
+  --main-font: "Mona Sans", sans-serif;
+  --bg-main: #f5f7fa;
+  --bg-content: #ffffff;
+  --bg-container: #fafafa;
+  --bg-hover: #e8ecef;
+  --bg-table-row-even: #f3f4f6;
+  --bg-table-row-hover: #e9ecef;
+  --bg-overlay: rgba(0, 0, 0, 0.4);
+  --bg-transparent: transparent;
+
+  --text-light: #ffffff;
+  --text-dark: #111827;
+  --text-dark-alt: #000000;
+  --text-medium-dark: #374151;
+  --text-medium: #6b7280;
+
+  --accent-primary: #5eb2ea;
+  --accent-primary-hover: #75baec;
+  --accent-primary-active: #89c3ef;
+
+  --accent-edit: #f9d423;
+  --accent-edit-hover: #ede574;
+  --accent-edit-active: #fc913a;
+  --accent-delete: #e2362c;
+  --accent-delete-hover: #ec5342;
+  --accent-delete-active: #d81816;
+  --accent-cancel: #f0eacf;
+  --accent-cancel-hover: rgb(228, 228, 228);
+  --accent-cancel-active: #6b7280;
+
+  --border-light: #d1d5db;
+  --border-xlight: #e5e7eb;
+  --border-medium: #9ca3af;
+  --border-default: #d1d5db;
+
+  --shadow-light: rgba(0, 0, 0, 0.05);
+  --shadow-medium: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.2);
+  --shadow-accent: rgba(34, 139, 181, 0.3);
+}
+
+body.dark-mode {
+  --bg-main: #282828;
+  --bg-content: #3f3f3f;
+  --bg-container: #3f3f3f;
+  --bg-hover: #e2e2e218;
+  --bg-table-row-even: #e2e2e218;
+  --bg-table-row-hover: #e2e2e218;
+  --bg-overlay: rgba(0, 0, 0, 0.65);
+  --bg-transparent: transparent;
+
+  --text-light: #f9fafb;
+  --text-dark: #f9fafb;
+  --text-dark-alt: #000;
+  --text-medium-dark: #e5e7eb;
+  --text-medium: #9ca3af;
+  --accent-cancel-hover: rgba(228, 228, 228, 0.114);
+  --accent-primary: #5eb2ea;
+  --accent-primary-hover: #75baec;
+  --accent-primary-active: #89c3ef;
+
+  --border-light: #4b5563;
+  --border-xlight: #374151;
+  --border-medium: #6b7280;
+  --border-default: #4b5563;
+
+  --shadow-light: rgba(0, 0, 0, 0.15);
+  --shadow-medium: rgba(0, 0, 0, 0.25);
+  --shadow-dark: rgba(0, 0, 0, 0.4);
+  --shadow-accent: rgba(94, 178, 234, 0.2);
+}

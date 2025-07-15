@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Centro Multiuso Esplanada</title>
+
+    <!-- Importando o CSS específico para a página de login -->
+    <link rel="stylesheet" href="../src/css/login.css" />
+  </head>
+  <body>
+    <!-- Container principal do login, dividido em duas partes -->
+    <div class="login">
+      <!-- Lado esquerdo com a logo -->
+      <div class="login__info-side">
+        <div class="login__info-content">
+          <img
+            src="../src/assets/img/logo-centro-multiuso.png"
+            class="login__logo"
+            alt="Logo Centro Multiuso"
+          />
+        </div>
+      </div>
+
+      <!-- Lado direito com o formulário de login -->
+      <div class="login__form-side">
+        <form class="login__form">
+          <!-- Título da tela de login -->
+          <h1 class="login__form-title">Bem-vindo(a)!</h1>
+
+          <!-- Campo para inserir o email -->
+          <div class="login__input-group">
+            <label for="username" class="login__label">Email</label>
+            <input
+              type="email"
+              id="username"
+              name="username"
+              class="login__input"
+              placeholder="Digite seu email"
+              required
+            />
+          </div>
+
+          <!-- Campo para inserir a senha -->
+          <div class="login__input-group">
+            <label for="password" class="login__label">Senha</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="login__input"
+              placeholder="Digite sua senha"
+              required
+            />
+          </div>
+
+          <!-- Botão para enviar o formulário -->
+          <button type="submit" class="login__button">Entrar</button>
+
+          <!-- Mensagem de erro caso o login falhe -->
+          <p class="login__error-message" id="login-error-message"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Importando o script de login -->
+    <script type="module" src="../src/js/login.js"></script>
+  </body>
+</html>

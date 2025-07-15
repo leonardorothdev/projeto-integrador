@@ -1,0 +1,108 @@
+.form,
+.form--add-class,
+.form--add-user,
+.form--add-student,
+.form--profile {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.form label {
+  font-weight: 500;
+  color: var(--text-medium-dark);
+}
+
+.form__input,
+.form__input--class-name,
+.form__input--class-shift,
+.form__input--class-schedule,
+.form__input--user-name,
+.form__input--user-email,
+.form__input--user-role,
+.form__input--user-password,
+.form__input--student-name,
+.form__input--student-birth,
+.form__input--student-age,
+.form__input--student-school,
+.form__input--student-grade,
+.form__input--student-sex,
+.form__input--student-responsible,
+.form__input--student-responsible-contact,
+.form__input--student-cpf,
+.form__input--student-rg,
+.form__input--student-address,
+.form__input--student-has-health-plan,
+.form__input--student-health-plan-name,
+.form__input--student-has-special-needs,
+.form__input--student-special-needs-type,
+.form__input--student-class-select,
+.form__input--student-image-auth,
+.form__input--profile-name,
+.form__input--profile-username,
+.form__input--profile-email,
+.form__input--profile-phone,
+.form__input--profile-password {
+  padding: 10px 12px;
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+}
+
+.form__input::-webkit-input-placeholder {
+  color: var(--text-medium);
+}
+.form__input:-ms-input-placeholder {
+  color: var(--text-medium);
+}
+.form__input::placeholder {
+  color: var(--text-medium);
+  opacity: 1;
+}
+
+.form__input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 5px var(--shadow-accent);
+}
+
+.section-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 24px;
+}
+
+.search {
+  position: relative;
+  flex-grow: 1;
+  min-width: 250px;
+}
+
+.search__input {
+  width: 100%;
+  padding: 10px 12px 10px 40px;
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  color: var(--text-dark);
+  background-color: var(--bg-content);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3ccircle cx='11' cy='11' r='8'%3e%3c/circle%3e%3cline x1='21' y1='21' x2='16.65' y2='16.65'%3e%3c/line%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: left 12px center;
+  background-size: 16px 16px;
+}
+
+.search__input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 5px var(--shadow-accent);
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro Multiuso Esplanada</title>
+
+    <!-- Importando o arquivo CSS principal -->
+    <link rel="stylesheet" href="../src/css/main.css" />
+  </head>
+  <body>
+    <!-- Barra lateral do sistema -->
+    <nav class="sidebar sidebar--open">
+      <div class="sidebar__content">
+        <!-- Área que mostra o usuário logado -->
+        <div class="sidebar__user">
+          <img
+            src="../src/assets/img/icons/avatar.png"
+            class="sidebar__user-avatar"
+            alt="Avatar do usuário."
+          />
+          <p class="sidebar__user-info">
+            <span class="sidebar__user-greeting">Bem-vindo(a),</span>
+            <!-- Aqui vai aparecer o nome do usuário logado -->
+            <span class="sidebar__user-name" id="welcome-message">User</span>
+          </p>
+        </div>
+
+        <!-- Lista de itens do menu -->
+        <ul class="sidebar__items">
+          <!-- Link para a seção de turmas (acessível para admin e professor) -->
+          <li class="sidebar__item" data-permission="admin,professor">
+            <a href="#classes" class="sidebar__link">
+              <i data-lucide="layout-dashboard"></i>
+              <span class="sidebar__item-desc">Turmas</span>
+            </a>
+          </li>
+          <!-- Link para a seção de usuários (apenas admin) -->
+          <li class="sidebar__item" data-permission="admin">
+            <a href="#users" class="sidebar__link">
+              <i data-lucide="users"></i>
+              <span class="sidebar__item-desc">Usuários</span>
+            </a>
+          </li>
+          <!-- Link para a seção de estudantes -->
+          <li class="sidebar__item" data-permission="admin,professor">
+            <a href="#students" class="sidebar__link">
+              <i data-lucide="user-plus"></i>
+              <span class="sidebar__item-desc">Estudantes</span>
+            </a>
+          </li>
+          <!-- Link para a seção de configurações -->
+          <li class="sidebar__item" data-permission="admin,professor">
+            <a href="#settings" class="sidebar__link">
+              <i data-lucide="settings"></i>
+              <span class="sidebar__item-desc">Configurações</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Botão para recolher ou expandir a sidebar -->
+        <button class="sidebar__toggle">
+          <i class="sidebar__toggle-icon"></i>
+        </button>
+      </div>
+
+      <!-- Botão de logout -->
+      <div class="sidebar__logout">
+        <button id="logout-btn" class="sidebar__logout-btn">
+          <i data-lucide="log-out"></i>
+          <span class="sidebar__item-desc">Sair</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Conteúdo principal do sistema -->
+    <main>
+      <!-- Cada div abaixo representa uma seção que será mostrada de acordo com o menu -->
+      <div
+        class="classes content-section"
+        id="classes-container"
+        data-permission="admin,professor"
+        style="display: none"
+      ></div>
+
+      <div
+        class="users content-section"
+        id="users-container"
+        data-permission="admin"
+        style="display: none"
+      ></div>
+
+      <div
+        class="students content-section"
+        id="students-container"
+        data-permission="admin,professor"
+        style="display: none"
+      ></div>
+
+      <div
+        class="settings content-section"
+        id="settings-container"
+        data-permission="admin,professor"
+        style="display: none"
+      ></div>
+    </main>
+
+    <!-- Importando o arquivo JS principal -->
+    <script type="module" src="../src/js/main.js"></script>
+    <!-- Biblioteca de ícones (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </body>
+</html>

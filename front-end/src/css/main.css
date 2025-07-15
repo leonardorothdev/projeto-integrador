@@ -1,0 +1,20 @@
+@import url("../css/components/_reset.css");
+@import url("../css/components/_variables.css");
+@import url("../css/components/_base.css");
+@import url("../css/components/_sidebar.css");
+@import url("../css/components/_tables.css");
+@import url("../css/components/_modals.css");
+@import url("../css/components/_forms.css");
+@import url("../css/components/_buttons.css");
+@import url("../css/components/_settings.css");
+@import url("../css/components/_responsive.css");
+
+.sidebar__item[data-permission],
+.content-section[data-permission] {
+  display: none;
+}
+
+body[data-role="admin"] [data-permission*="admin"],
+body[data-role="professor"] [data-permission*="professor"] {
+  display: revert; 
+}
