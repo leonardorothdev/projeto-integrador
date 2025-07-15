@@ -30,7 +30,7 @@ if (loginForm) {
 
       // Se login foi bem sucedido, redireciona para a página do dashboard
       if (user) {
-        window.location.href = "/pages/dashboard.html";
+        window.location.href = "../pages/dashboard.html";
       }
     } catch (error) {
       // Se der erro, mostra a mensagem que veio do módulo de autenticação
